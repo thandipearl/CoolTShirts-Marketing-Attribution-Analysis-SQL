@@ -6,7 +6,7 @@
 CoolTShirts, an innovative apparel brand, is running multi-channel marketing campaigns. This project analyzes user interactions across their digital touchpoints to determine which campaigns are most effective at both introducing users and converting them into customers.
 
 ## 🛠️ Tech Stack
-- SQL (SQLite)
+- SQL 
 - Data analysis using attribution modeling
 - Funnel exploration
 
