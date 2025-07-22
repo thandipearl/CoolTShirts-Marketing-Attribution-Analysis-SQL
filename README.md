@@ -50,6 +50,4 @@ CoolTShirts, an innovative apparel brand, is running multi-channel marketing cam
 | paid-search | Google | High intent traffic (52 purchases) |
 | cool-tshirts-search | Google | Full funnel contributor |
 
-## 📈 Example SQL Queries
-```sql
-SELECT COUNT(DISTINCT utm_campaign) FROM page_visits;
+
