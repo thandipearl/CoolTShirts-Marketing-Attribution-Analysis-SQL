@@ -171,6 +171,6 @@ ft_attr AS (
 )
 SELECT utm_source, utm_campaign, COUNT(*) AS first_touches
 FROM ft_attr GROUP BY 1, 2 ORDER BY 3 DESC;
-
+```
 -------------
 Please note: The raw dataset is not available for download as this project was completed within the Codecademy workspace.
