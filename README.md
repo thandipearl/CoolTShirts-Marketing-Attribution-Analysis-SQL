@@ -1,8 +1,8 @@
 # CoolTShirts
 
-# 🧮 Marketing Attribution Analysis — CoolTShirts
+#  Marketing Attribution Analysis — CoolTShirts
 
-## 📊 Overview
+##  Overview
 CoolTShirts is an innovative apparel shop specializing in T-shaped shirts. The company recently launched a variety of marketing campaigns across multiple digital channels and wants to optimize its marketing budget based on how users interact with their website.
 
 This project performs a marketing attribution analysis to answer the following:
@@ -11,7 +11,7 @@ This project performs a marketing attribution analysis to answer the following:
 - What is the typical user journey?
 - Which 5 campaigns should CoolTShirts reinvest in?
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - SQL (SQLite)
 - Attribution modeling (first-touch and last-touch)
 - Funnel analysis
@@ -31,7 +31,7 @@ Total rows: 5,692
 
 ---
 
-## 🎯 Project Goals
+##  Project Goals
 
 1. Understand campaign and source performance.
 2. Attribute value to campaigns across the user funnel.
@@ -39,9 +39,9 @@ Total rows: 5,692
 
 ---
 
-## 🔍 Key Findings and Actionable Insights
+##  Key Findings and Actionable Insights
 
-### 📌 Campaign and Source Overview
+###  Campaign and Source Overview
 - **Campaigns used:** 8  
 - **Sources used:** 6  
 - **Campaign–Source mapping:**
@@ -57,7 +57,7 @@ Total rows: 5,692
 | medium     | interview-with-cool-tshirts-founder   |
 | nytimes    | getting-to-know-cool-tshirts          |
 
-🧠 **Insight:** Email and Google are used for multiple campaigns, indicating potential for channel segmentation and A/B testing across audiences.
+ **Insight:** Email and Google are used for multiple campaigns, indicating potential for channel segmentation and A/B testing across audiences.
 
 ---
 
@@ -71,7 +71,7 @@ This structure represents a standard 4-step purchase funnel.
 
 ---
 
-### 🚀 First Touch Attribution (Brand Discovery)
+###  First Touch Attribution (Brand Discovery)
 
 | Source   | Campaign                            | First Touches |
 |----------|-------------------------------------|----------------|
@@ -80,11 +80,11 @@ This structure represents a standard 4-step purchase funnel.
 | buzzfeed | ten-crazy-cool-tshirts-facts        | **576**        |
 | google   | cool-tshirts-search                 | 169            |
 
-🧠 **Insight:** Editorial-style content on **Medium, NYTimes, and BuzzFeed** is effective at **attracting new visitors**.
+ **Insight:** Editorial-style content on **Medium, NYTimes, and BuzzFeed** is effective at **attracting new visitors**.
 
 ---
 
-### 🎯 Last Touch Attribution (Conversions)
+###  Last Touch Attribution (Conversions)
 
 | Source   | Campaign              | Last Touches |
 |----------|-----------------------|----------------|
@@ -97,11 +97,11 @@ This structure represents a standard 4-step purchase funnel.
 | google   | paid-search           | 178            |
 | google   | cool-tshirts-search   | 60             |
 
-🧠 **Insight:** Email campaigns and Facebook retargeting ads are **strongest at closing**. These should be prioritized for conversion optimization and scaling.
+ **Insight:** Email campaigns and Facebook retargeting ads are **strongest at closing**. These should be prioritized for conversion optimization and scaling.
 
 ---
 
-### 💰 Purchase Attribution (Direct Last-Touch on `4 - purchase` Page)
+###  Purchase Attribution (Direct Last-Touch on `4 - purchase` Page)
 
 | Source   | Campaign              | Purchases |
 |----------|-----------------------|------------|
@@ -114,7 +114,7 @@ This structure represents a standard 4-step purchase funnel.
 | medium   | interview-with-cool-tshirts-founder | 7 |
 | google   | cool-tshirts-search   | 2          |
 
-🧠 **Insight:** Over **90% of purchases** came from just 4 campaigns — again, showing **email and retargeting strength**.
+ **Insight:** Over **90% of purchases** came from just 4 campaigns — again, showing **email and retargeting strength**.
 
 ---
 
@@ -129,11 +129,11 @@ Here are sample user journeys from a few visitors:
 | 10162   | 1 - landing_page → 2 - shopping_cart → 3 - checkout → 4 - purchase |
 | 10329   | 1 - landing_page → 2 - shopping_cart → 3 - checkout → 4 - purchase |
 
-🧠 **Insight:** Funnel is functioning well, but **not all users reach the purchase step**. Focus on improving **checkout completion** rates.
+ **Insight:** Funnel is functioning well, but **not all users reach the purchase step**. Focus on improving **checkout completion** rates.
 
 ---
 
-## 💸 Top 5 Campaigns for Reinvestment
+##  Top 5 Campaigns for Reinvestment
 
 | Campaign              | Source   | Why Reinvest?                            |
 |-----------------------|----------|------------------------------------------|
@@ -145,7 +145,7 @@ Here are sample user journeys from a few visitors:
 
 ---
 
-## 🧠 Lessons Learned
+##  Lessons Learned
 
 - Top-of-funnel awareness is driven by **editorial content**, especially through Medium and NYTimes.
 - Email and retargeting campaigns perform **best at converting** users to purchasers.
@@ -171,3 +171,6 @@ ft_attr AS (
 )
 SELECT utm_source, utm_campaign, COUNT(*) AS first_touches
 FROM ft_attr GROUP BY 1, 2 ORDER BY 3 DESC;
+
+-------------
+Please note: The raw dataset is not available for download as this project was completed within the Codecademy workspace.
